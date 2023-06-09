@@ -26,7 +26,7 @@
         direction.y = Input.get_axis("ui_up","ui_down")
         direction = direction.normalized()
     ```
-    ![image](./readme_content/Player.png)
+    ![image](./readme_content/player.png)
 
 2. `Tilemap` - 
     - Create a tilemap as you wish, I've used the black for the walls, gray for floor.
