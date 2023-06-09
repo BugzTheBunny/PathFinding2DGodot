@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvkraom33axaa"]
+
+[ext_resource type="Texture2D" uid="uid://b8dh58g7b3b2b" path="res://icon.svg" id="1_absss"]
+[ext_resource type="Script" path="res://enemy.gd" id="1_bxy44"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hn780"]
+radius = 32.0
+
+[node name="Enemy" type="CharacterBody2D"]
+light_mask = 2
+visibility_layer = 3
+scale = Vector2(0.5, 0.5)
+collision_layer = 2
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_bxy44")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0.686275, 0, 1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_absss")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hn780")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+debug_enabled = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
