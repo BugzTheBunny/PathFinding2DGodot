@@ -2,6 +2,9 @@
 
 ![image](./readme_content/Animation.gif)
 
+## Big thanks to `DevWorm` for [this video](https://www.youtube.com/watch?v=Lt9YdQ6Ztm4&ab_channel=DevWorm)
+
+---
 
 # Steps (Does not include UI and project settings):
 1. `Player` :  
